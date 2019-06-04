@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AlertModule } from 'ng2-bootstrap';
 
@@ -12,6 +11,7 @@ import { ConfigurationService, EnvironmentsService, NotificationsService, Sessio
 import { NotificationsComponent } from './notifications/notifications.component';
 import { RoutingModule } from './app.routing';
 import { environment as env} from '../environments/environment';
+import {HttpClientModule} from "@angular/common/http";
 
 const CONFIGURATION = {
   declarations: [AppComponent, NotificationsComponent],
