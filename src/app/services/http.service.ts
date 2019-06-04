@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, RequestOptionsArgs, Response } from "@angular/http";
+import { HttpClient, RequestOptionsArgs, Response } from "@angular/http";
 
 import { NetworkAction } from "app/types";
 import { Observable } from "rxjs/Observable";
@@ -8,7 +8,7 @@ import { Observable } from "rxjs/Observable";
 export class HttpService {
   private _actions: NetworkAction[] = [];
 
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   get actions(): NetworkAction[] {
     return this._actions;

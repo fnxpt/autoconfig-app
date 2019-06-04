@@ -21,9 +21,9 @@
       </div>
     </span>
     <span class="input-group-addon" [ngPlural]="getFilterValuesCount(filter.field)">
-      <template ngPluralCase="=0">All</template>
-      <template ngPluralCase="=1">1 rule</template>
-      <template ngPluralCase="other">{{getFilterValuesCount(filter.field)}} rules</template>
+      <ng-template ngPluralCase="=0">All</ng-template>
+      <ng-template ngPluralCase="=1">1 rule</ng-template>
+      <ng-template ngPluralCase="other">{{getFilterValuesCount(filter.field)}} rules</ng-template>
     </span>
   </div>
 </div>

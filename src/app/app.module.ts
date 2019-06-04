@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AlertModule } from 'ng2-bootstrap';
 
@@ -17,7 +17,7 @@ const CONFIGURATION = {
   declarations: [AppComponent, NotificationsComponent],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     SharedModule,
     EnvironmentsModule,
     AlertModule.forRoot(),
